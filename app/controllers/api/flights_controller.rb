@@ -1,4 +1,5 @@
 class Api::FlightsController < ApplicationController
+  include ActionController::MimeResponds
   def index 
     @flights = Flight.all
     respond_to do |f|
